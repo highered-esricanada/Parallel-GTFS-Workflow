@@ -1,4 +1,4 @@
-![dashboard](/img/dashboard_transit.jpg)
+![dashboard](/img/dashboard_transit.JPG)
 # Parallel GTFS Workflow
 A replicable workflow (i.e., data pipeline) for parallel processing of GTFS (real-time + static) data to calculate various transit metrics using Geographic Information Systems (GIS) and data engineering techniques. 
 
