@@ -12,6 +12,7 @@ COVID-19 has revealed the entire world of how fragile our essential infrastructu
    - Cloned env: If cloned conda environment has not been created, a **bat** file (for Windows) and **bash** file (for Linux) is provided to automate this process.
    - Packages: Comes with **requirements.txt** to download missing packages automatically to your cloned environment. 
 2) ArcGIS License to use ArcPy and by extension the ArcGIS API for Python
+3) [MongoDB installed](https://docs.mongodb.com/manual/installation/) 
 
 
  
