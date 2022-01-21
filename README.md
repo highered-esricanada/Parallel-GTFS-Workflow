@@ -9,10 +9,9 @@ COVID-19 has revealed the entire world of how fragile our essential infrastructu
 
 ## Software Requirements
 1) Python 3.x run by conda environment in ArcGIS 
-   - <u>Cloned env</u>: If cloned conda environment has not been created, a **bat** file (for Windows) and **bash** file (for Linux) is provided to automate this process.
+   - Cloned env: If cloned conda environment has not been created, a **bat** file (for Windows) and **bash** file (for Linux) is provided to automate this process.
    - Packages: Comes with **requirements.txt** to download missing packages automatically to your cloned environment. 
-2) 
-
+2) ArcGIS License to use ArcPy and by extension the ArcGIS API for Python
 
 
  
