@@ -19,15 +19,14 @@ Below are required parameters, for backend details refer to the directory: gtfs_
 :params url: The url to download GTFS-RT pb file. 
 :params city: The name of the city you are extracting GTFS-RT from. This is to name the CSV file.
 :params hours: The number of hours for the harvester to run throughout the day.
-			   Contingent on the frequency of the GTFS-RT update (i.e., throttle)
+	       Contingent on the frequency of the GTFS-RT update (i.e., throttle)
 :params throttle: Pauses the harvester in x seconds - this is contingent on how often the 
-				  GTFS-RT updates (e.g., Calgary updates every 30 seconds; Boston every 5 seconds.)
+	          GTFS-RT updates (e.g., Calgary updates every 30 seconds; Boston every 5 seconds.)
 :params output_directory: The output directory to store the csv file that collects raw GTFS-RT from.
-					      Highly recommended to keep it the way it is - the rest of the pipeline depends on it.
+			  Highly recommended to keep it the way it is - the rest of the pipeline depends on it.
 """
 
 from gtfs_harvester import ExtractGTFSRT
-
 
 harvest = ExtractGTFSRT(url="https://data.calgary.ca/download/am7c-qe3u/application%2Foctet-stream", 
 		     	city="Calgary", 
