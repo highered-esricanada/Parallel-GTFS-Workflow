@@ -1,5 +1,4 @@
 """
-Author: Anastassios Dardas, PhD - Higher Education Specialist in the Education & Research Group at Esri Canada. 
 Date: Remodified Q1 - 2022
 
 About: Iteratively harvests GTFS-RT, converts to proper dataframe structure, and appends to a csv file. 
