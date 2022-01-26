@@ -1,5 +1,5 @@
 ![dashboard](/img/dashboard_transit.JPG)
-# Parallel GTFS Workflow
+# Parallel GTFS-RT Workflow
 A replicable workflow (i.e., data pipeline) that parallel processes GTFS (real-time + static) data to calculate various transit metrics using Geographic Information Systems (GIS) and data engineering techniques. Transit metrics from the workflow can be injected in a Web GIS dashboard to view spatiotemporal variations of transit reliability. 
 
 **PLEASE NOTE** - The original code is undergoing modifications (e.g., better documentation) and will be published in increments over time - the entire repo is projected to be complete by Spring 2022. 
