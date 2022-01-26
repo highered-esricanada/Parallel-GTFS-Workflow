@@ -30,8 +30,8 @@ from gtfs_harvester import ExtractGTFSRT
 
 
 harvest = ExtractGTFSRT(url="https://data.calgary.ca/download/am7c-qe3u/application%2Foctet-stream", 
-		     			city="Calgary", 
-					    hours=14, 
-					    time_zone="America/Edmonton",
-					    throttle=30, 
-					    output_directory="../data")
+		     	city="Calgary", 
+			hours=14, 
+			time_zone="America/Edmonton",
+			throttle=30, 
+			output_directory="../data")
