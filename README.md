@@ -11,7 +11,7 @@ A replicable workflow (i.e., data pipeline) that parallel processes GTFS (real-t
 COVID-19 has revealed the entire world of how fragile our essential infrastructure is and has reminded us that system adaptation and resilience are crucial (OECD, 2021; Sneader and Lund, 2020). Essential infrastructure is defined as basic necessities that are crucial to the well-being and convenience of the general public. These include basic hygience, healthcare, emergency personnel, clean water, basic hygiene, fresh groceries, energy, communications, and transportation. All of these elements are interlinked and maintains the global economy and modern life. In the wake of rapid population growth, especially mass migrations to cities, and climate change/chaos, the need for resilience and adaptability is a must. Therefore, this research and development project presents a replicable workflow that intends to cover both of these needs in the context of urban public transit services.
 
 ## How to use
-Download the repository as a zip file, unzip it, and proceed to the [**packages**](packages) folder. 
+Download the repository as a zip file, unzip it, and proceed to the [**packages**](/packages) folder. 
 If you plan to run all 
 
 
