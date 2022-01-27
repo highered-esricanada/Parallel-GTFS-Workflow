@@ -1,1 +1,1 @@
-![harvester workflow](../../../img/harvester_flow.JPG)
+<img src='../../../img/harvester_flow.JPG' width="700"/>
