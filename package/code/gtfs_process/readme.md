@@ -4,7 +4,7 @@
 The **main_process.py** script contains 3 major processes (i.e., classes) that require the user to input x parameters.
 <br>
 <br>
-<img src='../../../../img/processes_flow.JPG'/>
+<img src='../../../img/processes_flow.JPG'/>
 
 <details><summary><h2>1st Major Process - CheckGTFS</h2></summary>
 
@@ -68,10 +68,12 @@ Below are the backend steps (in order) briefly explained followed by a graphic t
 		</ul>
 	</li>
 </ol>
-
-<img src='../documentation/refine.jpg'/>
-
-
+<br>
+<br>
+<img src='../../../img/refine.JPG'/>
+<br>
+<br>
+	
 ## F) Packages Used & Purpose
 | Package | Purpose |
 | :--------: | ------- |
