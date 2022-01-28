@@ -4,7 +4,7 @@
 The **main_process.py** script contains 3 major processes (i.e., classes) that require the user to input x parameters.
 <br>
 <br>
-<img src='../documentation/processes_flow.jpg'/>
+<img src='../../../../img/processes_flow.JPG'/>
 
 <details><summary><h2>1st Major Process - CheckGTFS</h2></summary>
 
