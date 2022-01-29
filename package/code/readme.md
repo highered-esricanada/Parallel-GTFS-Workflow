@@ -12,7 +12,7 @@ Collects GTFS-RT every nth (e.g., 30) seconds for x (e.g., 14) hours per day, pa
 Extensive documentation including backend code can be viewed in the [**gtfs_harvester**](gtfs_harvester) folder.
 
 ## Data Processing
-The main operation of the workflow that processes collected raw GTFS-RT data and outputs transit metrics. Approximately 95% of this component runs in parallel. 
+The main operation of the workflow that processes collected raw GTFS-RT data and outputs transit metrics. Approximately 95% of this component runs in parallel. Extensive documentation including backend code can be viewed in the [**gtfs_process**](gtfs_process) folder.
 
 ## Data Storage
 Sends the output transit metrics to MongoDB for storage. 
