@@ -10,13 +10,12 @@ USER NOTES - MUST READ:
 	1) Check to make sure that the URL to the GTFS-RT downloads as a PB file. 
 	2) Works best if GTFS-RT updates less than a minute - ideally less than or equal to 30 seconds.
 	3) Ensure that the GTFS-RT has the following schema: vehicle_id, trip_id, lat, lon, and timestamp. 
-	4) Ensure that the timestamp being collected is originally UTC zone - check line 65, under tzinfo parameter.
+	4) Ensure that the timestamp being collected is originally UTC zone - check line 64, under tzinfo parameter.
 """
 
 from google.transit import gtfs_realtime_pb2
 from datetime import datetime 
 import requests
-import datetime as dte
 import time
 import pytz
 import os.path
