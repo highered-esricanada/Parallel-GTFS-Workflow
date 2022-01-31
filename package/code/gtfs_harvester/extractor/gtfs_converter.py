@@ -25,11 +25,11 @@ from tqdm import tqdm
 
 class ExtractGTFSRT:
 
-	def __init__(self, url, city, hours, time_zone, throttle, output_directory):
+	def __init__(self, url, city, hrs_collect, time_zone, throttle, output_directory):
 		"""
 		:params url: The url to download GTFS-RT pb file. 
 		:params city: The name of the city you are extracting GTFS-RT from. 
-		:params hours: The number of hours for the harvester to run throughout the day.
+		:params hrs_collect: The number of hours for the harvester to run throughout the day.
 						Contingent on the frequency of the update (i.e., throttle).
 		:params time_zone: The time zone of the study area for Pytz. Type pytz.all_timezones to find proper zone.
 		:params throttle: Pause the function in seconds - this is contingent on how often the 
@@ -39,7 +39,7 @@ class ExtractGTFSRT:
 
 		self._extracter(url=url, 
 						city=city, 
-						hours=hours, 
+						hrs_collect=hrs_collect, 
 						time_zone=time_zone, 
 						throttle=throttle, 
 						output_directory=output_directory)
@@ -68,7 +68,7 @@ class ExtractGTFSRT:
 		return (utc_time, loc_time)
 
 
-	def _extracter(self, url, city, hours, time_zone, throttle, output_directory):
+	def _extracter(self, url, city, hrs_collect, time_zone, throttle, output_directory):
 		"""
 		For what each parameter means, refer to def __init__. 
 		This function extracts entities from the GTFS-RT feed - uses self._time_extractor function.
@@ -84,7 +84,7 @@ class ExtractGTFSRT:
 		# For example, a GTFS-RT update is every 30 seconds and you want to collect for 12 hrs. per day:
 		#			  Iterator = (60 sec. / update frequency) * 60 (min/hr) * hrs to collect   		
 		#			  iterator = (60 sec. / 30 sec. for calgary) * 60 (min/hr) * 12 to collect
-		iterator = round((60 / throttle) * 60 * hours)
+		iterator = round((60 / throttle) * 60 * hrs_collect)
 
 
 		# Collect over time based on defined timer.
