@@ -16,7 +16,7 @@ Iteratively harvests GTFS-RT, parses relevant entities and structures to datafra
 
 ### B) Function Details
 
-Coded in **gtfs_converter.py**, the **ExtractGTFSRT** class composes of 152 lines of code. 
+Coded in [**gtfs_converter.py**]('extractor/gtfs_converter.py'), the **ExtractGTFSRT** class composes of 152 lines of code. 
 
 ### C) Required Parameters
 
