@@ -12,7 +12,7 @@ The **main_harvester.py** script contains 1 major process (i.e., class) that req
 Iteratively harvests GTFS-RT, parses relevant entities and structures to dataframe, and appends to CSV file. 
 
 <br>
-<p align="center"><img src='../../../img/harvester_flow.JPG' width='60%'/></p>
+<p align="center"><img src='../../../img/harvester_refine.JPG' width='60%'/></p>
 
 ### B) Function Details
 
