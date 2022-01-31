@@ -83,7 +83,7 @@ class ExtractGTFSRT:
 		# Calculate the iterator - sets as a runtime for the harvester. 
 		# For example, a GTFS-RT update is every 30 seconds and you want to collect for 12 hrs. per day:
 		#			  Iterator = (60 sec. / update frequency) * 60 (min/hr) * hrs to collect   		
-		#			  iterator = (60 sec. / 30 sec. for calgary) * 60 (min/hr) * 14 to collect
+		#			  iterator = (60 sec. / 30 sec. for calgary) * 60 (min/hr) * 12 to collect
 		iterator = round((60 / throttle) * 60 * hours)
 
 
