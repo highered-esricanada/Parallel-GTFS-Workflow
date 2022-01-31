@@ -30,11 +30,13 @@ With a total of 692 lines of code in the <strong>refine.py</strong> script, <str
 **Utils:** discover_docs.py, parallelize.py, process_time.py
 
 ### D) Required Parameters
-1) ***main_link*** - the main string inside the main hyperlink (e.g., https://transitfeeds.com).
-2) ***pattern_txt*** - the pattern text in the hyperlink. 
-3) ***hyperlink*** - the main hyperlink (e.g., https://transitfeeds.com/p/calgary-transit/238/latest/download)
-4) ***start_method*** - the start method to initiate parallel processing (Linux set to "fork" or "spawn" if using ArcPy; Windows set to "spawn").
-5) ***wkid*** - Well-known ID of the spatial reference. 
+| Parameter | Type | Purpose |
+| :-------: | ---- | ------- |
+| ***main_link*** | Str | The main string of the main hyperlink (e.g., https://transitfeeds.com).|
+| ***pattern_txt*** | Str | The pattern text of the entire hyperlink (not the main hyperlink). |
+| ***hyperlink*** | Str | The entire hyperlink (e.g., https://transitfeeds.com/p/calgary-transit/238/latest/download). | 
+| ***start_method*** | Str | The start method to initiate parallel processing (Linux set to "spawn" since it uses ArcPy, otherwise "fork"; Windows set to "spawn".) | 
+| ***wkid*** | Str | Well-known ID of the spatial reference (e.g., 4326; 3857). |
 
 ### E) Step Details
 
