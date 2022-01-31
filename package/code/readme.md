@@ -18,4 +18,4 @@ Extensive documentation including backend code can be viewed in the [**gtfs_harv
 The main operation of the workflow that processes collected raw GTFS-RT data and outputs transit metrics. Approximately 95% of this component runs in parallel. Extensive documentation including backend code can be viewed in the [**gtfs_process**](gtfs_process) folder.
 
 ## Data Storage
-Sends the output transit metrics to MongoDB for storage. 
+Sends the output transit metrics to MongoDB for storage. Extensive documentation including backend code can be viewed in the [**gtfs_storage**](gtfs_storage) folder.
