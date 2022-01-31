@@ -12,7 +12,7 @@ The **main_harvester.py** script contains 1 major process (i.e., class) that req
 Iteratively harvests GTFS-RT, parses relevant entities and structures to dataframe, and appends to CSV file. 
 
 <br>
-<p align="center"><img src='../../documentation/harvester_flow.JPG' width='60%'/></p>
+<p align="center"><img src='../../../img/harvester_flow.JPG' width='60%'/></p>
 
 ### B) Function Details
 
@@ -54,7 +54,7 @@ For example, let's say a GTFS-RT feed from a transit agency updates every 30 sec
 ***iterator*** = 1,440
 <br>
 <br>
-<p align="center"><img src='../../documentation/harvest_converter.JPG' width='60%'/></p>
+<p align="center"><img src='../../../img/harvest_converter.JPG' width='60%'/></p>
 
 ### E) Packages Used & Purpose 
 | Package | Purpose | 
