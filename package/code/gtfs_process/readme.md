@@ -70,7 +70,7 @@ Below are the backend steps (in order) briefly explained followed by a graphic t
 </ol>
 <br>
 <br>
-<img src='../../../img/refine.JPG'/>
+<img src='../../../img/process_refine.JPG'/>
 <br>
 <br>
 	
