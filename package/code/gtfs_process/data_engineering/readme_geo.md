@@ -64,7 +64,7 @@ Below are the backend steps (in order) briefly explained followed by a graphic t
 	</li>
 </ol>
 <br>
-<img src='../../../documentation/geoapi_flow.JPG' width="900" />
+<img src='../../../../img/geoapi_flow.JPG' width="900" />
 <br>
 
 ### E) Spatial DataFrame Output
