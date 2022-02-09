@@ -83,6 +83,8 @@ Below are the backend steps (in order) briefly explained followed by a graphic t
 | ***y*** | The y-coordinate (latitude) of the snapped point. |
 | ***wkid*** | The spatial reference of the snapped point. |  
 
+<br>
+
 | stop_id | stop_seque | index | objectid | SHAPE | barcode | Local_Time | trip_id | point | x | y | wkid | 
 | ------- | ---------- | ----- | -------- | ----- | ------- | ---------- | ------- | ----- | --- | --- | --- | 
 | 9245 | 3 | 38 | 39 | {'paths': [[[-114.07547299999999, 50.92544700000008], [-114.07571299999995, 50.92577300000005]]], 'spatialReference': {'wkid': 4326, 'latestWkid': 4326}} | 1 | 9/30/2021 6:30:56 AM | 57429050 | {'x': -114.07569517273546, 'y': 50.925748784364636, 'spatialReference': {'wkid': 4326, 'latestWkid': 4326}} | -114.0756952 | 50.92574878 | 4326 | 
