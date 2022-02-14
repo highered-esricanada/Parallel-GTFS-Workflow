@@ -19,7 +19,7 @@ The <strong><a href=''>qaqc.py</a></strong> script consists of 3 data engineerin
 <strong>Trending order</strong>: The expected ascending order trend of the values, specifically stop sequence and the index values of the undissolved segment. Below is a sample graphic demonstrating which observation would be out-of-placed. 
 <br>
 <br>
-<p align='center'><img src="../../../documentation/trending_order.JPG"/></p>
+<p align='center'><img src="../../../../img/trending_order.JPG"/></p>
 <br>
 <strong>Retention Rate</strong>: The percentage of observations retained after QA/QC by taking the number of observations in the final dataset divided by the number of observations in the original dataset. 
 
@@ -51,7 +51,7 @@ Below are the backend steps (in order) briefly explained followed by a graphic t
 	<li>Get the retention value (lines 86-89), append retention information (lines 91), export the cleaner dataframe to csv file (lines 93-95), and return cleaner dataframe for further downstream processing (lines 97).
 </ol>
 <br>
-<p align='center'><img src='../../../documentation/qaqc_flow.JPG' width="600"/></p>
+<p align='center'><img src='../../../../img/qaqc_flow.JPG' width="600"/></p>
 <br>
 
 ### E) Packages Used & Purpose 
