@@ -64,7 +64,7 @@ Below are the backend steps (in order) briefly explained followed by a graphic t
 	<li>Get the retention value (lines 240-243), append retention information (lines 248), export the cleaner dataframe to csv file (lines 245-246), and return cleaner dataframe for further downstream processing (lines 250).
 </ol>
 <br>
-<p align='center'><img src='../../../documentation/enrich_flow.JPG' width="700"/></p>
+<p align='center'><img src='../../../../img/enrich_flow.JPG' width="700"/></p>
 <br>
 
 
