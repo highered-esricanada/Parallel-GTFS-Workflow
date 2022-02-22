@@ -19,6 +19,8 @@ Download the repository as a zip file, unzip it, and proceed to the [**package**
    - Cloned env: If cloned conda environment has not been created, a **bat** file (for Windows) and **bash** file (for Linux) is provided to automate this process.
    - Packages: Comes with **requirements.txt** to download missing packages automatically to your cloned environment. 
 2) ArcGIS License to use ArcPy and by extension the ArcGIS API for Python
+   - **Windows Users**: Single sign-on in ArcGIS Pro or ArcGIS Enterprise (Base Server - minimum). 
+   - **Linux Users**: ArcGIS Enterprise (Base Server - minimum). 
 3) [MongoDB installed](https://docs.mongodb.com/manual/installation/) 
 
 
