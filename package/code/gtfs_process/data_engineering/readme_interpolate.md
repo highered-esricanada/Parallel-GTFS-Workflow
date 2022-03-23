@@ -19,7 +19,7 @@ Except the <strong>__init__</strong> function, all other functions are described
 Below is an image that encapsulates a generic overview of the backend processes.
 <br>
 <br>
-<p align='center'><img src='../../../documentation/broad_interpolation.JPG' width="800"/></p>
+<p align='center'><img src='../../../../img/broad_interpolation.JPG' width="800"/></p>
 <br>
 
 ### C) Interpolation Concepts 
@@ -28,19 +28,19 @@ There are five main types of consecutive movements identified in **_augmentTrave
 <ol>
 	<li><strong>Movement through Multiple (in-between) Stops:</strong> Defined as the first of the two recordings (in blue) of the same vehicle in the consecutive pair en-transit (i.e., movement), where the 2nd recording has travelled through several (>= 2) stops (in red) from its 1st recording.</li>
 	<br>
-	<p align='center'><img src='../../../documentation/multiple_stops.JPG' width='600'/></p>
+	<p align='center'><img src='../../../../img/multiple_stops.JPG' width='600'/></p>
 	<br>
 	<li><strong>Movement through One Stop:</strong> Similar as the multiple stops scenario, except the 2nd recording has travelled through one stop from its 1st recording.</li>
 	<br>
-	<p align='center'><img src='../../../documentation/one_stop.JPG' width='600'/></p>
+	<p align='center'><img src='../../../../img/one_stop.JPG' width='600'/></p>
 	<br>
 	<li><strong>Movement at Same Stop at Different Segment:</strong> Both recordings are en-transit to the same stop, except the 2nd recording is on a different segment.</li>
 	<br>
-	<p align='center'><img src='../../../documentation/same_stop_diffseg.JPG' width='600'/></p>
+	<p align='center'><img src='../../../../img/same_stop_diffseg.JPG' width='600'/></p>
 	<br>
 	<li><strong>Movement at Same Stop at Same Segment:</strong> Both recordings are en-transit to the same stop, except the 2nd recording is on the same segment (at a distance) from the 1st.</li>
 	<br>
-	<p align='center'><img src='../../../documentation/same_stop_sameseg.JPG' width='600'/></p>
+	<p align='center'><img src='../../../../img/same_stop_sameseg.JPG' width='600'/></p>
 	<br>
 	<li><strong>Stationary:</strong> The 1st recording that has been classified as stationary from the prior enriched processed. Does not factor the 2nd recording.</li>
 </ol>
@@ -240,7 +240,7 @@ Below are the backend steps (in order) briefly explained followed by a figure th
 	</li> 
 </ol>
 <br>
-	<p align='center'><img src='../../../documentation/detail_interpolation.JPG' width='850'/></p>
+	<p align='center'><img src='../../../../img/detail_interpolation.JPG' width='850'/></p>
 <br>
 
 ### G) Specific Backend Processes - Conditional by Travel Type
@@ -257,12 +257,12 @@ Below are the backend steps (in order) briefly explained followed by a figure th
 <br>
 <p>The workflow below applies only to travel types that are either <strong>Movement through Multiple (in-between) Stops</strong> (i.e., BtwnStps) or <strong>Movement through One Stop</strong> (i.e., OneStp).</p>
 <br>
-<p align='center'><img src='../../../documentation/btwnstp_onestp_workflow.JPG' width='850'/></p>
+<p align='center'><img src='../../../../img/btwnstp_onestp_workflow.JPG' width='850'/></p>
 <br>
 <br>
 <p>The workflow below applies only to the travel type <strong>Movement through Multiple (in-between) Stops</strong> (i.e., SameStp) whether the two vehicles are on the same or at different segments.</p>
 <br>
-<p align='center'><img src='../../../documentation/samestp_workflow.JPG' width='850'/></p>
+<p align='center'><img src='../../../../img/samestp_workflow.JPG' width='850'/></p>
 <br>
 More information of the classes that have not been explained can be viewed either in the class dictionary or in the provided Python scripts.
 <br>
