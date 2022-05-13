@@ -27,23 +27,16 @@ The user is not required to insert the parameters for the prep_agg_parallel.py s
 | ***trips_txt*** | DataFrame | DataFrame of the trips.txt from the static GTFS files. | 
 
  
-### D) Step Details 
-Below are the backend steps (in order) briefly explained followed by a graphic that encapsulates it. 
-<ol>
-	<li>Execute <strong>self._improve_data</strong> (lines 52-97), drops unnecessary duplicate values (lines 67-73). These are trip_ids that have been recorded originally, but have not changed in the next recording. Not all GPS devices are equally synchronized.
-		<ul>
-			<li>Omit negative values by group by trip_id and apply <strong>self._check_diffs</strong> with defined degree order. Repeat this two more times (degree order - 2 and 1).</li>
-		</ul>	
-	</li>
-	<br>
-	<li>In the <strong>self._check_diffs</strong> (lines 31-49) function, assign the difference by stop sequence and index value fields and keep values that are NA or greater than or equal to zero. Drop the created fields to maintain current dataframe.
-	</li>
-	<br>
-	<li>Get the retention value (lines 86-89), append retention information (lines 91), export the cleaner dataframe to csv file (lines 93-95), and return cleaner dataframe for further downstream processing (lines 97).
-</ol>
-<br>
-<p align='center'><img src='../../../../img/qaqc_flow.JPG' width="600"/></p>
-<br>
+### D) Sample of Unwanted Observation 
+Below is a sample of unwanted observation that needs to be removed. 
+
+| trip_id | idx | stop_seque | Max Stop Seq. | Retain |
+| :-----: | :---: | :------: | :-----------: | :----: |
+| A |  1 | 2 | 30 | Yes | 
+| A | 2 | 3 | 30 | Yes | 
+| ... | ... | ... | ... | 
+| A | 18 | 30 | 30 | Yes | 
+| A | 19 | 2 | 30 | No | 
 
 ### E) Packages Used & Purpose 
 | Package | Purpose | 
