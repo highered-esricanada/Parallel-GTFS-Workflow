@@ -40,7 +40,25 @@ The user is not required to insert the parameters for the prep_agg_parallel.py s
 
  
 ### D) Outcome Schema & Table Samples 
-Below is a sample of unwanted observation that needs to be removed. 
+Below are outcome schema and their respective table samples. 
+
+<strong>Table 1A:</strong> General Aggregation 
+<br>
+
+| Field | Description | 
+| :-----: | :-------: | 
+| route_id | The transit route. | 
+| trip_id  | The ID related to the transit route with its own schedule. |
+| stop_seque | Tied to stop_id, the sequence number of the transit stop of the transit route. |
+| stop_id | Identifier of the transit stop of the transit route provided by static GTFS files. |
+| sched_arr | The expected scheduled arrival of that transit stop of the route. | 
+| off_earr | The last projected observation (before transitioning to the next stop) of arrival time of he vehicle (trip_id). | 
+| Lprfrte | The last projected on-time performance observation (before transitioning to next stop). |
+| ref_hr | Reference hour extracted from sched_arr. |
+| AvgSpd | The overall average projected speed (km/h). |
+| Avg_ArrDif | The overall average arrival time difference (km/h). | 
+| idx | The cumulative number of vehicle movements - there will be gaps (e.g. 1 -> 3 -> 7). The gaps indicate that there were multiple recorded (and interpolated) observations that happened in-between and were filtered out after aggregation. |
+| TotalObs | Not entirely related to the difference of idx between stops; however, this provides the total observations that occurred for that trip_id at that stop_seque. For instance, trip_id X at stop_seque Y had 4 occurrences. This factors in the calculations for the columns <strong>Late</strong> till <strong>PrcObsUns</strong>. Keep in mind this does not directly measure probability of on-time performance, but rather the stability in status updates. |
 
 
 ### E) Packages Used & Purpose - Need to update 
