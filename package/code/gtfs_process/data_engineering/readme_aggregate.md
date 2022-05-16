@@ -59,7 +59,23 @@ Below are outcome schema and their respective table samples.
 | Avg_ArrDif | The overall average arrival time difference (km/h). | 
 | idx | The cumulative number of vehicle movements - there will be gaps (e.g. 1 -> 3 -> 7). The gaps indicate that there were multiple recorded (and interpolated) observations that happened in-between and were filtered out after aggregation. |
 | TotalObs | Not entirely related to the difference of idx between stops; however, this provides the total observations that occurred for that trip_id at that stop_seque. For instance, trip_id X at stop_seque Y had 4 occurrences. This factors in the calculations for the columns <strong>Late</strong> till <strong>PrcObsUns</strong>. Keep in mind this does not directly measure probability of on-time performance, but rather the stability in status updates. |
+| Late | The number of observations per route_id, trip_id, and stop_seque that have been projected to arrive Late. | 
+| On-Time | The number of observations per route_id, trip_id, and stop_seque that have been projected to arrive On-Time. |
+| Early | The number of observations per route_id, trip_id, and stop_seque that have been projected to arrive Early. |
+| Satis | Short for satisfactory, factoring only the total observations that fall in the on-time field. |
+| Unsatis | Short for unsatisfactory, combining late and early total observations. |
+| PrcObsSat | Short for percentage of all observations projected to have an on-time performance of satisfactory. Signifies stability of status change. Higher indicates more stable status change and higher probability to be on-time. |
+| PrcObsUns | Short for percentage of all observations projected to be early and/or late. Higher indicates less stable status change and higher probability to be late or early. | 
+| spdList | Nested list of all observations (from first to last observation) of that trip_id and stop_seque of projected speed. Often won't match with TotalObs due to duplicates. |
+| arrdifList | Nested list of all observations (from first to last observation) of that trip_id and stop_seque of arrival time difference. Often won't match with TotalObs due to duplicates. |
+| x | The last observed (recorded or interpolated) x (lon) coordinate of the vehicle. |
+| y | The last observed (recorded or interpolated) y (lat) coordinate of the vehicle. |
 
+<br>
+<strong>Table 1B:</strong>Sample Table of General Aggregation
+
+| route_id | trip_id | stop_seque | stop_id | sched_arr | off_earr | Lprfrte | ref_hr | AvgSpd | Avg_ArrDif | idx | TotalObs | 
+| :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------:
 
 ### E) Packages Used & Purpose - Need to update 
 | Package | Purpose | 
