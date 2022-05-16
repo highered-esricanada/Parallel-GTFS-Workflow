@@ -72,11 +72,17 @@ Below are outcome schema and their respective table samples.
 | y | The last observed (recorded or interpolated) y (lat) coordinate of the vehicle. |
 
 <br>
-<strong>Table 1B:</strong>Sample Table of General Aggregation
+<strong>Table 1B: </strong>Sample Table of General Aggregation
+<br>
+<br>
 
-| route_id | trip_id | stop_seque | stop_id | sched_arr | off_earr | Lprfrte | ref_hr | AvgSpd | Avg_ArrDif | idx | TotalObs | 
-| :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------:
+| route_id | trip_id | stop_seque | stop_id | sched_arr | off_earr | Lprfrte | ref_hr | AvgSpd | Avg_ArrDif | idx | TotalObs | Late | On-Time | Early | Satis | Unsatis | PrcObsSat | PrcObsUns | spdList | arrdifList | x | y |
+| :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
+| 10-100114 | 57434244 | 2 | 8392 | 2021-09-30 07:12:00 | 2021-09-30 07:11:32 | On-Time | 7 | 23.3 | 35.0 | 2 | 2 | 0 | 2 | 0 | 2 | 0 | 100 | 0 | [31.2, 15.4] | [42.0, 28.0] | -114.07418 | 50.95777 | 
+| 10-100114 | 57434244 | 3 | 5957 | 2021-09-30 07:13:00 | 2021-09-30 07:13:17 | On-Time | 7 | 18.37 | -10.0 | 6 | 3 | 0 | 3 | 0 | 3 | 0 | 100 | 0 | [15.4, 21.7, 18.0] | [4.0, -17.0, -17.0] | -114.06890 | 50.95746 | 
+| 10-100114 | 57434244 | 4 | 7961 | 2021-09-30 07:14:00 | 2021-09-30 07:14:20 | On-Time | 7 | 30.45 | -42.5 | 7 | 2 | 0 | 2 | 0 | 2 | 0 | 100 | 0 | [18.0, 42.9] | [-65.0, -20.0] | -114.06834 | 50.95620 | 
 
+ 
 ### E) Packages Used & Purpose - Need to update 
 | Package | Purpose | 
 | :-----: | ----- | 
