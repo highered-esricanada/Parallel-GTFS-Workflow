@@ -82,6 +82,51 @@ Below are outcome schema and their respective table samples.
 | 10-100114 | 57434244 | 3 | 5957 | 2021-09-30 07:13:00 | 2021-09-30 07:13:17 | On-Time | 7 | 18.37 | -10.0 | 6 | 3 | 0 | 3 | 0 | 3 | 0 | 100 | 0 | [15.4, 21.7, 18.0] | [4.0, -17.0, -17.0] | -114.06890 | 50.95746 | 
 | 10-100114 | 57434244 | 4 | 7961 | 2021-09-30 07:14:00 | 2021-09-30 07:14:20 | On-Time | 7 | 30.45 | -42.5 | 7 | 2 | 0 | 2 | 0 | 2 | 0 | 100 | 0 | [18.0, 42.9] | [-65.0, -20.0] | -114.06834 | 50.95620 | 
 
+<br>
+<br>
+<strong>Table 2A:</strong> Aggregate on Hourly Basis Per Day
+<br>
+<br>
+
+| Field | Description | 
+| :-----: | :-------: | 
+| route_id | The transit route. | 
+| stop_id | Identifier of the transit stop of the transit route provided by static GTFS files. |
+| stop_seque | Tied to stop_id, the sequence number of the transit stop of the transit route. |
+| ref_hr | Reference hour extracted from sched_arr. |
+| cntTripIDs | The number of trip_ids that were observed in near "real-time". |
+| AllObs | Not the same as cntTripIDs, all observations recorded & interpolated from all involved trip_ids. |
+| AvgSpd | The overall unweighted average projected speed (km/h) based on cntTripIDs. |
+| spd_w | The weighted average speed based on calculations from AllObs. |
+| Avg_ArrDif | The overall unweighted average arrival time difference (km/h) based on cntTripIDs. | 
+| arrd_w | The weighted average arrival time difference (sec.) based on calculations from AllObs. | 
+| PrcObsSat | The unweighted average percent of total observations (recorded + interpolated) projected to be on-time. |
+| PrcObsUns | The unweighted average percent of total observations (recorded + interpolated) projected to be early/late. | 
+| prcwSat | The weighted average percent of total observations (recorded + interpolated) projected to be on-time. |
+| prcwUns | The weighted average percent of total observations (recorded + interpolated) projected to be early/late. |
+| ActSatP | The actual percentage (based on last projected observation per trip_id) of being on-time. |
+| ActUnsP | The actual percentage (based on last projected observation per trip_id) of being early/late. |
+
+<br>
+<strong>Table 2B: </strong>Sample Table of Aggregate on Hourly Basis Per Day
+<br>
+<br>
+
+| route_id | stop_id | stop_seque | ref_hr | cntTripIDs | AllObs | AvgSpd | spd_w | Avg_ArrDif | arrd_w | PrcObsSat | PrcObsUns | prcwSat | prcwUns | ActSatP | ActUnsP |
+| :-----: | :-----: | :-----:| :-----:| :-----:| :-----:| :-----:| :-----:| :-----:| :-----:| :-----:| :-----:| :-----:| :-----:| :-----:| :-----: |
+| 10-100114 | 8392 | 2 | 6 | 1 | 1 | 35.7 | 35.7 | 31 | 31 | 100 | 0 | 100 | 0 | 100 | 0 |
+| 10-100114 | 8392 | 2 | 7 | 2 | 3 | 30.6 | 14.08 | -46.5 | -9.67 | 50 | 50 | 33.33 | 16.67 | 50 | 50 |
+| 10-100114 | 8392 | 2 | 8 | 2 | 2 | 30.5 | 15.25 | 29 | 14.5 | 100 | 0 | 50 | 0 | 100 | 0 |
+| 10-100114 | 8392 | 2 | 9 | 2 | 2 | 11.7 | 5.85 | -36.5 | -18.25 | 50 | 50 | 25 | 25 | 50 | 50 |
+| 10-100114 | 8392 | 2 | 10 | 2 | 3 | 27.7 | 13.81 | -14.5 | -3.67 | 100 | 0 | 50 | 0 | 100 | 0 |
+| 10-100114 | 8392 | 2 | 11 | 2 | 2 | 29.7 | 14.85 | 31 | 15.5 | 100 | 0 | 50 | 0 | 100 | 0 |
+| 10-100114 | 8392 | 2 | 12 | 1 | 1 | 10.7 | 10.7 | 54 | 54 | 100 | 0 | 100 | 0 | 100 | 0 |
+| 10-100114 | 8392 | 2 | 13 | 2 | 3 | 15.98 | 7.98 | -118 | -59 | 50 | 50 | 25 | 25 | 50 | 50 |
+| 10-100114 | 8392 | 2 | 14 | 1 | 1 | 33.4 | 33.4 | 7 | 7 | 100 | 0 | 100 | 0 | 100 | 0 |
+| 10-100114 | 8392 | 2 | 15 | 2 | 2 | 15.95 | 7.98 | -118 | -59 | 50 | 50 | 25 | 25 | 50 | 50 |
+| 10-100114 | 8392 | 2 | 16 | 1 | 1 | 18.3 | 18.3 | -123 | -123 | 0 | 100 | 0 | 100 | 0 | 100 |
+| 10-100114 | 8392 | 2 | 17 | 1 | 1 | 29.1 | 29.1 | -28 | -28 | 100 | 0 | 100 | 0 | 100 | 0 |
+| 10-100114 | 8392 | 2 | 19 | 1 | 1 | 28.7 | 28.7 | -108 | -108 | 100 | 0 | 100 | 0 | 100 | 0 |
  
 ### E) Packages Used & Purpose - Need to update 
 | Package | Purpose | 
