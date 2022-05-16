@@ -16,30 +16,8 @@ This final component of the workflow finalizes the interpolated (cleaned version
 <br> 
 From the 2nd to the 4th bullet point, these outcomes are concatenated and exported into three shapefiles. The first stored in the <strong>6_analyses</strong> folder and the latter two outcomes in the <strong>7_requests</strong> folder. Schema details with table samples are provided further in this document. 
 
-
-### B) Function Details - Need to update 
-The <strong><a href=''>aggregation.py</a></strong> script consists of 4 data engineering functions bringing a total of 144 lines of code. Except the <strong>__init__</strong> function, all other functions are described in the table below. Terminology, such as <strong>degree order</strong> and <strong>trending order</strong> are described after the table. 
-
-
-| Name of Function | Lines | Purpose | 
-| :---: | ----- | ----- | 
-| ***_filt_df*** | 35-48 | Filters out unwanted observations that may distort aggregate calculations.   |
-| ***_clean_df*** | 51-108 | Cleaning process - removes unwanted observations including illogical observations that have very high speed and estimated extreme arrival times (> 20 min. as the threshold). |
-| ***_mainprocess*** | 111-144 | The main process to clean, filter, and concat final output per interpolated csv file. This entire process is done in conventional parallel processing. | 
-
-
-### C) Required Parameters (Indirect) - Need to update
-
-The user is not required to insert the parameters for the prep_agg_parallel.py script. Rather, the backend processes from transform.py inserts it programmatically as part of the downstream workflow. 
-
-| Parameter | Type | Purpose | 
-| :-------: | :---: | ------ | 
-| ***start_method*** | Str | "spawn" (Windows or use of ArcPy) or "fork" (Linux without use of ArcPy) to spin up parallel processing.  | 
-| ***L*** | List | Part of the Manager function in Multiprocessing, it is a list distributed across all CPU cores and stores any errors during cleaning process. After parallel processing, the errors are written in a text file as comma delimited. | 
-| ***trips_txt*** | DataFrame | DataFrame of the trips.txt from the static GTFS files. | 
-
  
-### D) Outcome Schema & Table Samples 
+### B) Outcome Schema & Table Samples 
 Below are outcome schema and their respective table samples. 
 
 <strong>Table 1A:</strong> General Aggregation 
@@ -167,8 +145,3 @@ Below are outcome schema and their respective table samples.
 | 10-100114 | 5544 | 5 | 14 | [6,7,8,9,10,11,12,13,14,15,16,17,18,19] | 2 | 73 | 29.13 | 17.25 | -72 | -42.59 | 77.5 | 22.5 | 47.71 | 13.00 | 71.42 | 28.57 |
 | 10-100114 | 5545 | 6 | 14 | [6,7,8,9,10,11,12,13,14,15,16,17,18,19] | 2 | 38 | 35.5 | 22.75 | -50.49 | -35.84 | 85.71 | 14.28 | 55.65 | 8.63 | 89.28 | 10.71 |
 | 10-100114 | 5546 | 7 | 14 | [6,7,8,9,10,11,12,13,14,15,16,17,18,19] | 2 | 46 | 35.18 | 21.14 | -69.41 | -44.72 | 73.21 | 26.78 | 42.5 | 18.2 | 71.42 | 28.57 | 
-
-### E) Packages Used & Purpose - Need to update 
-| Package | Purpose | 
-| :-----: | ----- | 
-| ***Pandas (indirect)***  | Data Engineering operations including apply, assign, query, groupby, drop_duplicates, and diff for dataframes. |
