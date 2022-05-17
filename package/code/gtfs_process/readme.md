@@ -1,10 +1,8 @@
 # Extensive Documentation - Data Processing Workflow 
 
 ## Structure Overview
-The **main_process.py** script contains 3 major processes (i.e., classes) that require the user to input x parameters.
+The **main_process.py** script contains 2 major processes (i.e., classes) that require the user to input x parameters.
 <br>
-<br>
-<p align='center'><img src='../../../img/main_process_flow.JPG' width='80%'/></p>
 
 <details><summary><h2>1st Major Process - CheckGTFS</h2></summary>
 
