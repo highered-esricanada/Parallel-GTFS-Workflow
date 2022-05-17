@@ -5,7 +5,7 @@ This component of the workflow sets up a trip profile of each consecutive pair o
 
 
 ### B) Function Details 
-The <strong><a href=''>enrich_travel.py</a></strong> script consists of 7 data engineering functions bringing a total of 250 lines of code. Except the <strong>__init__</strong> function, all other functions are described in the table below. 
+The <strong><a href='enrich_travel.py'>enrich_travel.py</a></strong> script consists of 7 data engineering functions bringing a total of 250 lines of code. Except the <strong>__init__</strong> function, all other functions are described in the table below. 
 
 | Name of Function | Lines | Purpose | 
 | :---: | ----- | ----- | 
