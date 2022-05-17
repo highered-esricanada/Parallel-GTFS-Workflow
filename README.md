@@ -25,7 +25,8 @@ Download the repository as a zip file, unzip it, and proceed to the [**package**
      - Multiprocessing (usually part of Python base)
      - Functools (usually part of Python base)
      - BeautifulSoup via bs4
-     - tqdm   
+     - tqdm 
+     - Google Transit (for GTFS via pip install --upgrade gtfs-realtime-bindings)  
   
 2) ArcGIS License to use ArcPy and by extension the ArcGIS API for Python
    - **Windows Users**: Single sign-on in ArcGIS Pro or ArcGIS Enterprise (Base Server - minimum). 
