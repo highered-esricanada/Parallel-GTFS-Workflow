@@ -1,8 +1,9 @@
 """
 Author: Anastassios Dardas, PhD - Higher Education Specialist, Education & Research Group at Esri Canada
-About: 
-Requirements: 
 
+About: The main GTFS-RT process to interpolate and aggregate on-time performance. 
+
+Date: Re-modified Q2-2022
 """
 
 from gtfs_process import CheckGTFS, NeedProcess, ExecuteProcess
