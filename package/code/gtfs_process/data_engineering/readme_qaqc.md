@@ -5,7 +5,7 @@ This component of the workflow checks the quality of the data after geoprocessin
 
 
 ### B) Function Details 
-The <strong><a href=''>qaqc.py</a></strong> script consists of 3 data engineering functions bringing a total of 97 lines of code. Except the <strong>__init__</strong> function, all other functions are described in the table below. Terminology, such as <strong>degree order</strong> and <strong>trending order</strong> are described after the table. 
+The <strong><a href='qaqc.py'>qaqc.py</a></strong> script consists of 3 data engineering functions bringing a total of 97 lines of code. Except the <strong>__init__</strong> function, all other functions are described in the table below. Terminology, such as <strong>degree order</strong> and <strong>trending order</strong> are described after the table. 
 
 
 | Name of Function | Lines | Purpose | 
