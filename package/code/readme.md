@@ -22,4 +22,4 @@ The main operation of the workflow that processes collected raw GTFS-RT data and
 <strong>Note</strong>: The python scripts in the data_engineering and util folders are not necessarily connected to each other, but rather signify which sub-folder they belong to.
 
 ## Data Storage
-Sends the output transit metrics to MongoDB for storage. Extensive documentation including backend code can be viewed in the [**gtfs_storage**](gtfs_storage) folder. This component has not reached maturity and unfortunately is not included in the package. 
+Sends the output transit metrics to MongoDB for storage. This component has not reached maturity and unfortunately is not included in the package. 
