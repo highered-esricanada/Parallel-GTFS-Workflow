@@ -6,7 +6,7 @@ This component of the workflow is new and essential to cleaning up in parallel u
 
 
 ### B) Function Details 
-The <strong><a href=''>prep_agg_parallel.py</a></strong> script consists of 4 data engineering functions bringing a total of 144 lines of code. Except the <strong>__init__</strong> function, all other functions are described in the table below. Terminology, such as <strong>degree order</strong> and <strong>trending order</strong> are described after the table. 
+The <strong><a href='prep_agg_parallel.py'>prep_agg_parallel.py</a></strong> script consists of 4 data engineering functions bringing a total of 144 lines of code. Except the <strong>__init__</strong> function, all other functions are described in the table below. Terminology, such as <strong>degree order</strong> and <strong>trending order</strong> are described after the table. 
 
 
 | Name of Function | Lines | Purpose | 
