@@ -14,7 +14,7 @@ This final component of the workflow finalizes the interpolated (cleaned version
  </ol>
 
 <br> 
-From the 2nd to the 4th bullet point, these outcomes are concatenated and exported into three shapefiles. The first stored in the <strong>6_analyses</strong> folder and the latter two outcomes in the <strong>7_requests</strong> folder. Schema details with table samples are provided further in this document. 
+From the 2nd to the 4th bullet point, these outcomes are concatenated and exported into three shapefiles. The first stored in the <strong>6_analyses</strong> folder and the latter two outcomes in the <strong>7_requests</strong> folder. Schema details with table samples are provided further in this document. The Python script can be found at <a href='aggregation.py'>aggregation.py</a>.
 
  
 ### B) Outcome Schema & Table Samples 
