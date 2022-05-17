@@ -19,5 +19,7 @@ Extensive documentation including backend code can be viewed in the [**gtfs_harv
 ## Data Processing
 The main operation of the workflow that processes collected raw GTFS-RT data and outputs transit metrics. Approximately 95% of this component runs in parallel. Extensive documentation including backend code can be viewed in the [**gtfs_process**](gtfs_process) folder.
 
+<strong>Note</strong>: The python scripts in the data_engineering and util folders are not necessarily connected to each other, but rather signify which sub-folder they belong to.
+
 ## Data Storage
 Sends the output transit metrics to MongoDB for storage. Extensive documentation including backend code can be viewed in the [**gtfs_storage**](gtfs_storage) folder. This component has not reached maturity and unfortunately is not included in the package. 
