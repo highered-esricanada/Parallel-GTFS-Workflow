@@ -14,8 +14,10 @@ Collects GTFS-RT every nth (e.g., 30) seconds for x (e.g., 14) hours per day, pa
 
 Extensive documentation including backend code can be viewed in the [**gtfs_harvester**](gtfs_harvester) folder.
 
+<strong>Note</strong>: If you are using two different machines (e.g., VMs), you will need to schedule harvesting time and data processing time separately. For example, if you start automatically an Azure VM for data harvesting time at 6:00 AM (local time) for 14 hours, you will need to spin up an automated start up time at 10:00 PM for the other Azure VM to do data processing. This package does not include of how to transfer collected near real-time GTFS data between VMs. One approach is to use the subprocess package in Python, set it up in the harvester VM with recognized credentials (i.e., SSH & PPK files) to transfer the file to the processor VM. The processor VM needs to be started prior to transfer time (recommended 5 minute window). To instantiate data harvesting and processing, both Linux VMs (or one) will require crontab with a custom shell script to run automatically. 
+
 ## Data Processing
 The main operation of the workflow that processes collected raw GTFS-RT data and outputs transit metrics. Approximately 95% of this component runs in parallel. Extensive documentation including backend code can be viewed in the [**gtfs_process**](gtfs_process) folder.
 
 ## Data Storage
-Sends the output transit metrics to MongoDB for storage. Extensive documentation including backend code can be viewed in the [**gtfs_storage**](gtfs_storage) folder.
+Sends the output transit metrics to MongoDB for storage. Extensive documentation including backend code can be viewed in the [**gtfs_storage**](gtfs_storage) folder. This component has not reached maturity and unfortunately is not included in the package. 
