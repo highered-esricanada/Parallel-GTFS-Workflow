@@ -12,6 +12,7 @@ if __name__ == "__main__":
 
     ################################################################################################
     ################## 2nd Pipeline: Check for any updates with GTFS static files. #################
+    ################## Note: Assumes you are collecting the most recent GTFS-RT Data ###############
     ################################################################################################
     CheckGTFS(main_link="https://transitfeeds.com", 
              pattern_txt= r".*/p/calgary-transit/238/.*download.*", 
@@ -20,7 +21,9 @@ if __name__ == "__main__":
              wkid=4326)
 
     ################################################################################################
-    ######################### 
+    ################## 3rd Pipeline: Identifies which GTFS-RT files need to be processed. ##########
+    ################## Uses the GTFS static files to facilitate interpolation process     ##########
+    ################## of the GTFS-RT csv file(s).                                        ##########
     ################################################################################################
     # Check which raw GTFS-RT csv files need processing
     csv_inf = NeedProcess(main_folder="../data/0_external/GTFS").csv_inf
