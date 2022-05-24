@@ -1,7 +1,7 @@
 # Extensive Documentation - Data Processing Workflow 
 
 ## Structure Overview
-The **main_process.py** script contains 2 major processes (i.e., classes) that require the user to input x parameters.
+The **main_process.py** script contains 3 major processes (i.e., classes) that require the user to input 9 parameters.
 <br>
 
 <details><summary><h2>1st Major Process - CheckGTFS</h2></summary>
@@ -172,7 +172,7 @@ With a total of 478 lines of code in the ***transform.py*** script, ExecuteProce
 	</li>
 	<br>
 	<li><strong><i>AggResults</i></strong>
-	<ul><li>From the aggregation.py, finalizes the interpolated (cleaned version) results and aggregates. More details on the aggregation can be found in section E.</li></ul>
+	<ul><li>From the aggregation.py, finalizes the interpolated (cleaned version) results and aggregates. More details on the aggregation can be found <a href=''>aggregation_readme.md</a>.</li></ul>
 	</li>
 </ol>
 
