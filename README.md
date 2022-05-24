@@ -12,7 +12,9 @@ COVID-19 has revealed the entire world of how fragile our essential infrastructu
 
 ## Manuscript
 The manuscript can be viewed (with subscription / institutional access) via the link: https://onlinelibrary.wiley.com/doi/abs/10.1111/tgis.12942 
-Note: the fundamental concepts remain the same, however, with code remodification the data structure is different and more intuitive. 
+<br>
+
+<strong>Note</strong>: the fundamental concepts remain the same, however, with code remodification the data structure is different and more intuitive. 
 
 ## How to use
 Download the repository as a zip file, unzip it, and proceed to the [**package**](/package) folder. This is where extensive documentation on the structure of the entire repository can be viewed. For direct use of the code, extensive documentation can be found in the [**code**](/package/code) folder with more information available nested to its sub-folders. There is sample GTFS-RT data that has been collected and processed throughout the entire workflow. This can be used to either test out the code for processing <strong><a href='package/code/main_process.py'>main_process.py</a></strong> or to inspect the data structures. If test driving the code, temporarily comment out CheckGTFS as this component is meant to be aligned with the most recent GTFS update in conjunction to the most recent collected GTFS-RT data.
