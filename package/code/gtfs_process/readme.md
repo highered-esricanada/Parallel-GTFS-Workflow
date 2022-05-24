@@ -74,7 +74,7 @@ Below are the backend steps (in order) briefly explained followed by a graphic t
 <br>
 <br>
 	
-## F) Packages Used & Purpose
+### F) Packages Used & Purpose
 | Package | Purpose |
 | :--------: | ------- |
 |    re   | To compile regex expressions in a pattern text. |
@@ -90,5 +90,27 @@ Below are the backend steps (in order) briefly explained followed by a graphic t
 | ArcPy | Using the dissolve function in parallel to create dissolved transit routes. |
 | time  | Formatting date string to month number. |
 | tqdm | Progress bar. |
+
+</details>
+
+<details><summary><h2>2nd Major Process - NeedProcess</h2></summary>
+	
+### A) Purpose
+
+	
+### B) Function Details
+
+
+### C) Dependencies
+
+
+### D) Required Parameters
+
+
+### E) Step Details
+
+
+### F) Packages Used & Purpose
+
 
 </details>
