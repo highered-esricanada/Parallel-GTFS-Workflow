@@ -3,9 +3,7 @@
 # Parallel GTFS-RT Workflow
 A replicable workflow (i.e., data pipeline) that parallel processes GTFS (real-time + static) data to calculate various transit metrics using Geographic Information Systems (GIS) and data engineering techniques. Transit metrics from the workflow can be injected in a Web GIS dashboard to view spatiotemporal variations of transit reliability. 
 
-**PLEASE NOTE** - The original code is undergoing modifications (e.g., better documentation) and will be published in increments over time - the entire repo is projected to be complete by Spring 2022. 
-
-**Current remodification progress**: ![90%](https://progress-bar.dev/90)
+**Current remodification (code) progress**: ![100%](https://progress-bar.dev/100)
 
 ## Motivation
 COVID-19 has revealed the entire world of how fragile our essential infrastructure is and has reminded us that system adaptation and resilience are crucial (OECD, 2021; Sneader and Lund, 2020). Essential infrastructure is defined as basic necessities that are crucial to the well-being and convenience of the general public. These include basic hygience, healthcare, emergency personnel, clean water, basic hygiene, fresh groceries, energy, communications, and transportation. All of these elements are interlinked and maintains the global economy and modern life. In the wake of rapid population growth, especially mass migrations to cities, and climate change/chaos, the need for resilience and adaptability is a must. Therefore, this research and development project presents a replicable workflow that intends to cover both of these needs in the context of urban public transit services.
