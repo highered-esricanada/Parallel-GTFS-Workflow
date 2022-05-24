@@ -149,7 +149,7 @@ With a total of 478 lines of code in the ***transform.py*** script, ExecuteProce
 		</ul>
 	</li>
 	<br>
-	<li><strong><i>Maingeo</li></strong>
+	<li><strong><i>Maingeo</i></li></strong>
 		<ul><li>From the geoapi.py, it identifies the locations (i.e., snapping points) of the vehicles along the transit route.</li>
 		</ul>
 	</li>
