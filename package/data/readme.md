@@ -2,6 +2,7 @@
 
 The developer / user must retain a relative directory structure as shown in the figure below: 
 
+<p align='center' width='500px'><img src='../../img/folder_structure.JPG'></p>
 
 Within the folders are sub-folders created basd on the GTFS static update and the date of the near real-time GTFS. 
 
