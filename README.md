@@ -34,7 +34,7 @@ Unzip and extract the [**data**](/package/data) folders - it is crucially import
      - tqdm 
      - Google Transit (for GTFS via pip install --upgrade gtfs-realtime-bindings)
 
-Further (and more precise) instructions in how to clone your conda environment (with ArcPy & ArcGIS API) and set up the required packages can be viewed in the [**requirements.txt**](/package/requirements.txt). 
+Further (and more precise) instructions in how to clone your conda environment (with ArcPy & ArcGIS API) and set up the required packages can be viewed in the [**requirements.txt**](/package/code/requirements.txt). 
 
   
 2) ArcGIS License to use ArcPy and by extension the ArcGIS API for Python
