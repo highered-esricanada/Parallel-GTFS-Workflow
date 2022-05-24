@@ -172,15 +172,20 @@ With a total of 478 lines of code in the ***transform.py*** script, ExecuteProce
 	</li>
 	<br>
 	<li><strong><i>AggResults</i></strong>
-	<ul><li>From the aggregation.py, finalizes the interpolated (cleaned version) results and aggregates. More details on the aggregation can be found in section D.</li></ul>
+	<ul><li>From the aggregation.py, finalizes the interpolated (cleaned version) results and aggregates. More details on the aggregation can be found in section E.</li></ul>
 	</li>
 </ol>
 
 
 ### D) Required Parameters
-
+| Parameter | Type | Purpose |
+| :-------: | ---- | ------- |
+| ***csv_inf*** | DataFrame | DataFrame that contains information of each raw GTFS-RT csv file to be processed.|
+| ***start_method*** | Str | The start method to initiate parallel processing (Linux set to "spawn" since it uses ArcPy, otherwise "fork"; Windows set to "spawn".) | 
+| ***wkid*** | Str | Well-known ID of the spatial reference (e.g., 4326; 3857). |
 
 ### E) Step Details
+
 
 
 ### F) Packages Used & Purpose
