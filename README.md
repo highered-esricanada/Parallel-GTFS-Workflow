@@ -5,10 +5,12 @@ A replicable workflow (i.e., data pipeline) that parallel processes GTFS (real-t
 
 **PLEASE NOTE** - The original code is undergoing modifications (e.g., better documentation) and will be published in increments over time - the entire repo is projected to be complete by Spring 2022. 
 
-**Current remodification progress**: ![85%](https://progress-bar.dev/85)
+**Current remodification progress**: ![90%](https://progress-bar.dev/90)
 
 ## Motivation
 COVID-19 has revealed the entire world of how fragile our essential infrastructure is and has reminded us that system adaptation and resilience are crucial (OECD, 2021; Sneader and Lund, 2020). Essential infrastructure is defined as basic necessities that are crucial to the well-being and convenience of the general public. These include basic hygience, healthcare, emergency personnel, clean water, basic hygiene, fresh groceries, energy, communications, and transportation. All of these elements are interlinked and maintains the global economy and modern life. In the wake of rapid population growth, especially mass migrations to cities, and climate change/chaos, the need for resilience and adaptability is a must. Therefore, this research and development project presents a replicable workflow that intends to cover both of these needs in the context of urban public transit services.
+
+## Manuscript
 
 ## How to use
 Download the repository as a zip file, unzip it, and proceed to the [**package**](/package) folder. This is where extensive documentation on the structure of the entire repository can be viewed. For direct use of the code, extensive documentation can be found in the [**code**](/package/code) folder with more information available nested to its sub-folders. There is sample GTFS-RT data that has been collected and processed throughout the entire workflow. This can be used to either test out the code for processing <strong><a href='package/code/main_process.py'>main_process.py</a></strong> or to inspect the data structures. If test driving the code, temporarily comment out CheckGTFS as this component is meant to be aligned with the most recent GTFS update in conjunction to the most recent collected GTFS-RT data.
@@ -36,6 +38,13 @@ Unzip and extract the data folders - it is crucially important to retain this fi
    
 3) [(Optional) MongoDB installed](https://docs.mongodb.com/manual/installation/) 
 
+
+## Hardware Recommendations
+This workflow is designed to run on two Azure VMs: 
+   - 1 small VM (2 CPUs) for harvesting the data and then securely transferring the file over to the large VM. 
+   - 1 large VM (96 CPUs) for processing static and near real-time GTFS data 
+
+The entire workflow can be done on a single machine with a minimum of 8 CPUs (i5, i7, or i9 series); however, the main processing time of converting raw to refined data aggregation will take substantial time (~ 4 to 6 hrs), which is fine to run overnight before the next harvesting process instantiates. 
 
  
 ### References
