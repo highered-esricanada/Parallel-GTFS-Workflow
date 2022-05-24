@@ -45,7 +45,7 @@ Further (and more precise) instructions in how to clone your conda environment (
 
 
 ## Hardware Recommendations
-This workflow is designed to run on two Azure VMs: 
+This workflow is designed to run on two Azure VMs with crontab (Linux) and subprocess configured separately: 
    - 1 small VM (2 CPUs) for harvesting the data and then securely transferring the file over to the large VM. 
    - 1 large VM (96 CPUs) for processing static and near real-time GTFS data 
 
