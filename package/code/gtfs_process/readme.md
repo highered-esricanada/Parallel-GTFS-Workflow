@@ -96,22 +96,16 @@ Below are the backend steps (in order) briefly explained followed by a graphic t
 <details><summary><h2>2nd Major Process - NeedProcess</h2></summary>
 	
 ### A) Purpose
+Identifies which raw GTFS-RT csv file needs to be processed based on it not being labelled "complete." Additionally, it will be used to identify which static GTFS files need to be read. 
 
+### B) Required Parameters
+Only one parameter, ***main_folder***, is required. The ***main_folder*** is the directory (relative or absolute) path pointing to the folder where the raw near real-time GTFS csv file is hosted (before moving it to its GTFS static folder) and the GTFS static folder (formatted as date) containing static files (e.g., stops, routes, scheduled times). Assuming the folder directory structure remains the same, the parameter input would be: ***"../data/0_external/GTFS"***. 
+
+### C) Packages Used & Purpose
 	
-### B) Function Details
-
-
-### C) Dependencies
-
-
-### D) Required Parameters
-
-
-### E) Step Details
-
-
-### F) Packages Used & Purpose
-
+| Package | Purpose |
+| :----: | :----: | 
+| discover_docs | Custom Python script to scan csv files and indicate whether it has been processed (i.e., complete) prior or not. | 
 
 </details>
 
