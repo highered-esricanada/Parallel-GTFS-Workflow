@@ -4,15 +4,15 @@
 # Using the following commands may assist with the 
 # installation: 
 #
-#     > conda info --envs
+#   > conda info --envs
 #     
 #	  # For Windows Only
-#     > conda create -n {env_name} --clone arcgispro-py3
+#   > conda create -n {env_name} --clone arcgispro-py3
 #	  # For Windows & Linux - ArcGIS Enterprise
 #	  > conda create -c esri -n {env_name} arcgis-server-py3={version of ArcGIS Server} 
 #
-#     > conda activate {env_name}
-#     > pip install -r requirements.txt
+#   > conda activate {env_name}
+#   > pip install -r requirements.txt
 #
 # Modules that need to be installed, however, cannot
 # be installed via the requirements.txt include the 
