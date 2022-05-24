@@ -172,7 +172,7 @@ With a total of 478 lines of code in the ***transform.py*** script, ExecuteProce
 	</li>
 	<br>
 	<li><strong><i>AggResults</i></strong>
-	<ul><li>From the aggregation.py, finalizes the interpolated (cleaned version) results and aggregates. More details on the aggregation can be found <a href=''>aggregation_readme.md</a>.</li></ul>
+	<ul><li>From the aggregation.py, finalizes the interpolated (cleaned version) results and aggregates. More details on the aggregation can be found <strong><a href='data_engineering/readme_aggregate.md'>readme_aggregate.md</a></strong>.</li></ul>
 	</li>
 </ol>
 
@@ -189,7 +189,5 @@ Below is a figure that encapsulates the backend processing steps to converting r
 <br>
 <br>
 <p align='center' width='500px'><img src='../../../img/gtfs_process_high_level.JPG'/></p>
-
-
 
 </details>
