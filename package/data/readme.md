@@ -6,7 +6,7 @@ The developer / user must retain a relative directory structure as shown in the 
 
 Within the folders are sub-folders created basd on the GTFS static update and the date of the near real-time GTFS. 
 
-
+<p align='center' width='500px'><img src='../../img/folder_example.JPG'></p>
 
 <ol> 
   <li><strong>0_external</strong>: Where the near real-time and static GTFS files are stored. </li> 
