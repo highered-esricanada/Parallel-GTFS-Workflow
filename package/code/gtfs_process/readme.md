@@ -114,11 +114,57 @@ Only one parameter, ***main_folder***, is required. The ***main_folder*** is the
 ### A) Purpose
 This is the main GTFS workflow process that converts collected near real-time GTFS data into aggregated on-time performance metrics. The general workflow process are structured in the following ordered downstream: 
 
+<ol>
+<li>Create folder structure based on the GTFS-RT date within the GTFS main folder, if it does not exist.</li>
+<li>Within the <strong>_spatial_and_dataeng_ops</strong> function that is run in parallel:</li>
+<ul>
+	<li>Perform spatial operations - identify precisely all vehicle locations collected over time.</li>
+	<li>Perform Qa/Qc of the data - remove any unnecessary / junk data.</li>
+	<li>Enrich the dataset with additional attributes.</li>
+	<li>Perform Interpolation</li>
+</ul>
+<li>Run in parallel: refine & clean up any junk / unnecessary data in the interpolated files that has not been flagged earlier.</li>
+<li>Run in parallel: the data aggregation process.</li>
+</ol>
 	
 ### B) Function Details
-
+With a total of 478 lines of code in the ***transform.py*** script, ExecuteProcess class depends on 9 internal classes, which are: Ingestion, Maingeo, QaQc, RteEnricher, SpaceTimeInterp, AutoMake, ParallelPool, RefineInterp, and AggResults. Parallel run-time varies on the number of cores (and CPU type) available and number of routes that represent the transit network. For Calgary Transit on an 8-core Intel Xeon machine, took between 4 - 6 hours to complete. By comparison on a 96-core machine - 14.5 minutes to complete.
 
 ### C) Dependencies
+**Internal Classes**
+<ol>
+	<li><strong><i>Ingestion</i></strong>
+		<ul>
+			<li>Identify which static GTFS files need to be read based on the same directory wherre the raw GTFS-RT csv file is located. Read GTFS-RT file that needs to be processed and appropriate static GTFS files. Create dataframe that matches each trip_id to the dissolved & undissolved routes and transit stops shapefiles.</li>
+		</ul>
+	</li>
+	<br>
+	<li><strong><i>AutoMake</i></strong> 
+		<ul><li>Automatically creates sub-folders (e.g., "../data/2_staging/{folder_date}/{raw_date}")</li></ul>
+	</li>
+	<br>
+	<li><strong><i>ParallelPool</i></strong>
+		<ul>
+			<li>Instantiating parallel processing via the Pool method.</li>
+		</ul>
+	</li>
+	<br>
+	<li><strong><i>Maingeo</li></strong>
+		<ul><li>From the geoapi.py, it identifies the locations (i.e., snapping points) of the vehicles along the transit route.</li>
+		</ul>
+	</li>
+	<br>
+	<li><strong><i>QaQc</li></strong>
+		<ul><li>From the qaqc.py, removes "hazardous" observations (if applicable) that can tarnish calculations of transit metrics downstream. Outputs cleaner dataframe (in memory & in storage through 3_interim folder) and reports how much data has been retained after cleaning.</li>
+		</ul>
+	</li>
+	<br>
+	<li><strong><i>RteEnricher</i></strong>
+		<ul><li>Enriches the cleaner version of the individual transit route with additional attributes - mainly estimate vehicle movement type (stationary, movement, terminus) and set check points (validates quality of static GTFS via maximum stop sequence.).</li></ul>
+	</li>
+</ol>
+
+**Utils:** discover_docs.py, parallelize.py, process_time.py
 
 
 ### D) Required Parameters
