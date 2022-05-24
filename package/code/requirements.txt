@@ -1,0 +1,31 @@
+# This file traces the requisite modules needed to be 
+# installed for the project to be able to operate. 
+# 
+# Using the following commands may assist with the 
+# installation: 
+#
+#     > conda info --envs
+#     
+#	  # For Windows Only
+#     > conda create -n {env_name} --clone arcgispro-py3
+#	  # For Windows & Linux - ArcGIS Enterprise
+#	  > conda create -c esri -n {env_name} arcgis-server-py3={version of ArcGIS Server} 
+#
+#     > conda activate {env_name}
+#     > pip install -r requirements.txt
+#
+# Modules that need to be installed, however, cannot
+# be installed via the requirements.txt include the 
+# following:
+#  
+#    - arcpy/ ArcGIS API
+#
+# Please consult alternative directions to set it up.
+
+requests==2.25.1
+tqdm==4.62.0
+beautifulsoup4==4.10.0
+pytz==2020.1
+numpy==1.20.1
+pandas==1.2.3
+gtfs-realtime-bindings==0.0.7  # (Google Transit GTFS)
