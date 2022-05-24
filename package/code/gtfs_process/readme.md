@@ -185,10 +185,11 @@ With a total of 478 lines of code in the ***transform.py*** script, ExecuteProce
 | ***wkid*** | Str | Well-known ID of the spatial reference (e.g., 4326; 3857). |
 
 ### E) Step Details
+Below is a figure that encapsulates the backend processing steps to converting raw GTFS-RT csv files to data aggregation. 
+<br>
+<br>
+<p align='center' width='500px'><img src='../../../img/gtfs_process_high_level.JPG'/></p>
 
-
-
-### F) Packages Used & Purpose
 
 
 </details>
