@@ -114,3 +114,25 @@ Below are the backend steps (in order) briefly explained followed by a graphic t
 
 
 </details>
+
+<details><summary><h2>3rd Major Process - ExecuteProcess</h2></summary>
+	
+### A) Purpose
+
+	
+### B) Function Details
+
+
+### C) Dependencies
+
+
+### D) Required Parameters
+
+
+### E) Step Details
+
+
+### F) Packages Used & Purpose
+
+
+</details>
