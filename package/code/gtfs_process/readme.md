@@ -112,6 +112,7 @@ Only one parameter, ***main_folder***, is required. The ***main_folder*** is the
 <details><summary><h2>3rd Major Process - ExecuteProcess</h2></summary>
 	
 ### A) Purpose
+This is the main GTFS workflow process that converts collected near real-time GTFS data into aggregated on-time performance metrics. The general workflow process are structured in the following ordered downstream: 
 
 	
 ### B) Function Details
