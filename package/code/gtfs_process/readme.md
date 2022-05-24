@@ -154,7 +154,7 @@ With a total of 478 lines of code in the ***transform.py*** script, ExecuteProce
 		</ul>
 	</li>
 	<br>
-	<li><strong><i>QaQc</li></strong>
+	<li><strong><i>QaQc</i></li></strong>
 		<ul><li>From the qaqc.py, removes "hazardous" observations (if applicable) that can tarnish calculations of transit metrics downstream. Outputs cleaner dataframe (in memory & in storage through 3_interim folder) and reports how much data has been retained after cleaning.</li>
 		</ul>
 	</li>
@@ -162,9 +162,19 @@ With a total of 478 lines of code in the ***transform.py*** script, ExecuteProce
 	<li><strong><i>RteEnricher</i></strong>
 		<ul><li>Enriches the cleaner version of the individual transit route with additional attributes - mainly estimate vehicle movement type (stationary, movement, terminus) and set check points (validates quality of static GTFS via maximum stop sequence.).</li></ul>
 	</li>
+	<br>
+	<li><strong><i>SpaceTimeInterp</i></strong>
+	<ul><li>From the interpolate.py, performs spatio-temporal interpolation between consecutive pair (1st and 2nd recording at a time). Estimates projected travel speed & travel time to arrive stop_id destination, determines if it is on-time, late, or early.</li></ul>
+	</li>
+	<br>
+	<li><strong><i>RefineInterp</i></strong>
+	<ul><li>From the prep_agg_parallel.py, cleans out unwanted observations in all interpolated files in parallel prior to aggregation processing. Specifically, it investigates at beginning and terminus stops (typically found in loop routes) that may be geographically incorrect.</li></ul>
+	</li>
+	<br>
+	<li><strong><i>AggResults</i></strong>
+	<ul><li>From the aggregation.py, finalizes the interpolated (cleaned version) results and aggregates. More details on the aggregation can be found in section D.</li></ul>
+	</li>
 </ol>
-
-**Utils:** discover_docs.py, parallelize.py, process_time.py
 
 
 ### D) Required Parameters
