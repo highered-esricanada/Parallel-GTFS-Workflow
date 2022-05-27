@@ -10,7 +10,7 @@ Requirements:
   2) Both VMs need to communicate each other via SSH key pair (Linux). 
     - The receiver (larger VM) to have the authorized key (aka create SSH key pair). 
     - The sender (smaller VM) to have the .key file (acquire from the larger VM). 
-  3) If automated, require crontab configuration (Linux). 
+  3) If automated, require crontab configuration (Linux) include creation of .sh file. 
     
 Instructions on how to set up SSH keys: 
   1) https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804
